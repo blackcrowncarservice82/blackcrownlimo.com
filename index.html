@@ -24,23 +24,38 @@ header{
 nav{
     max-width:1200px;
     margin:0 auto;
-    height:140px;
+    height:160px;
     display:flex;
     justify-content:space-between;
     align-items:center;
     padding:0 30px;
 }
 
+/* LOGO WRAPPER */
+.logo{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:#1a2333;   /* matches navbar */
+    padding:20px;
+    border-radius:12px;
+}
+
+/* LOGO IMAGE */
+.logo img{
+    width:360px;   /* 3× bigger */
+    height:360px;
+    object-fit:contain;
+    display:block;
+}
+
+/* NAV LINKS */
 .nav-links a{
     color:white;
     text-decoration:none;
     margin-left:30px;
     font-size:16px;
-}
-
-.logo{
-    display:flex;
-    align-items:center;
 }
 </style>
 </head>
@@ -51,14 +66,7 @@ nav{
     <nav>
 
         <div class="logo">
-            <img src="logo.png"
-                 alt="Logo"
-                 style="
-                    width:120px;
-                    height:120px;
-                    object-fit:contain;
-                    display:block;
-                 ">
+            <img src="logo.png" alt="Logo">
         </div>
 
         <div class="nav-links">
