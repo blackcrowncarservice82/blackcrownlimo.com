@@ -6,8 +6,8 @@
     <title>Black Crown Limousine - Austin</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: Arial, sans-serif; line-height: 1.6; }
-        
+        body { font-family: Arial, sans-serif; }
+
         header {
             background: #1a2333;
             color: white;
@@ -16,6 +16,7 @@
             width: 100%;
             top: 0;
             z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
         }
         nav {
             max-width: 1200px;
@@ -25,53 +26,68 @@
             align-items: center;
             padding: 0 20px;
         }
-        .logo img { height: 70px; width: auto; }
-        
-        .hero {
-            height: 100vh;
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
-                        url('https://via.placeholder.com/1920x1080/1a2333/c5a05b?text=Black+Crown+Limousine+Austin') center/cover no-repeat;
+
+        /* Custom Logo with Crown inside "O" */
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 2px;
             display: flex;
             align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-            margin-top: 80px;
+            color: #c5a05b;
         }
-        .hero h1 { font-size: 3rem; margin-bottom: 20px; }
-        .hero p { font-size: 1.4rem; margin-bottom: 30px; }
-        .btn {
-            background: #c5a05b;
+        .logo .crown-o {
+            position: relative;
+            display: inline-block;
+            width: 38px;
+            height: 38px;
+            margin: 0 2px;
+        }
+        .logo .crown-o img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 32px;
+            height: 32px;
+            z-index: 2;
+        }
+        .logo span {
+            position: relative;
+        }
+
+        .nav-links a {
             color: white;
-            padding: 15px 40px;
-            font-size: 1.2rem;
             text-decoration: none;
-            border-radius: 8px;
+            margin-left: 30px;
+            font-weight: 500;
         }
+        .nav-links a:hover { color: #c5a05b; }
     </style>
 </head>
 <body>
 
     <header>
         <nav>
-            <a href="#" class="logo">
-                <img src="logo.png" alt="Black Crown Limousine">
-            </a>
-            <div>
-                <a href="#services" style="color:white; margin:0 15px; text-decoration:none;">Services</a>
-                <a href="#fleet" style="color:white; margin:0 15px; text-decoration:none;">Fleet</a>
-                <a href="#contact" style="color:white; margin:0 15px; text-decoration:none;">Contact</a>
+            <div class="logo">
+                BLACK CR
+                <span class="crown-o">
+                    <img src="logo.png" alt="Crown">
+                </span>
+                WN
+            </div>
+            
+            <div class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#fleet">Fleet</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
             </div>
         </nav>
     </header>
 
-    <section class="hero">
-        <div>
-            <h1>Premium Car & Limo Service in Austin</h1>
-            <p>Serving Austin & Central Texas</p>
-            <a href="#contact" class="btn">Book Your Ride Now</a>
-        </div>
-    </section>
+    <!-- Rest of your site content here -->
 
 </body>
 </html>
+
