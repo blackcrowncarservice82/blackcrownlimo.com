@@ -1,83 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Black Crown Limousine - Austin</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Crown Limousine - Austin</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+        header {
+            background: #1a2333;
+            color: white;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .logo img {
+            height: 75px;
+            width: auto;
+            max-height: 75px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+        .nav-links a:hover {
+            color: #c5a05b;
+        }
 
-header{
-    background:#1a2333;
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    box-shadow:0 2px 10px rgba(0,0,0,0.3);
-}
-
-nav{
-    max-width:1200px;
-    margin:0 auto;
-    height:160px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:0 30px;
-}
-
-/* LOGO WRAPPER */
-.logo{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    background:#1a2333;   /* matches navbar */
-    padding:20px;
-    border-radius:12px;
-}
-
-/* LOGO IMAGE */
-.logo img{
-    width:360px;   /* 3× bigger */
-    height:360px;
-    object-fit:contain;
-    display:block;
-}
-
-/* NAV LINKS */
-.nav-links a{
-    color:white;
-    text-decoration:none;
-    margin-left:30px;
-    font-size:16px;
-}
-</style>
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://via.placeholder.com/1920x1080/1a2333/c5a05b?text=Black+Crown+Limousine+Austin') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            margin-top: 85px;
+        }
+        .hero h1 { font-size: 3.2rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.4rem; margin-bottom: 2rem; }
+        .btn {
+            background: #c5a05b;
+            color: white;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+    </style>
 </head>
-
 <body>
 
-<header>
-    <nav>
+    <header>
+        <nav>
+            <a href="#" class="logo">
+                <img src="logo.png" alt="Black Crown Limousine">
+            </a>
+            <div class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#fleet">Fleet</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
 
-        <div class="logo">
-            <img src="logo.png" alt="Logo">
+    <section class="hero">
+        <div>
+            <h1>Premium Car & Limo Service in Austin</h1>
+            <p>Serving Austin & Central Texas</p>
+            <a href="#contact" class="btn">Book Your Ride Now</a>
         </div>
+    </section>
 
-        <div class="nav-links">
-            <a href="#services">Services</a>
-            <a href="#fleet">Fleet</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </div>
-
-    </nav>
-</header>
+    <!-- Add more sections later if you want -->
 
 </body>
 </html>
