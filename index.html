@@ -1,84 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Black Crown Limousine - Austin</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: Arial, sans-serif; }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Black Crown Limousine - Austin</title>
 
-        header {
-            background: #1a2333;
-            color: white;
-            padding: 15px 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-        }
-        nav {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 20px;
-        }
+<style>
 
-      
-        .logo  {
-            position: relative;
-            display: inline-block;
-            width: 38px;
-            height: 38px;
-            margin: 0 2px;
-        }
-        .logo img {
-            position: absolute;
-            top: 75%;
-            left: 75%;
-            transform: translate(-50%, -50%);
-            width: 47px;
-            height: 47px;
-            z-index: 2;
-        }
-        .logo span {
-            position: relative;
-        }
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            margin-left: 30px;
-            font-weight: 500;
-        }
-        .nav-links a:hover { color: #c5a05b; }
-    </style>
+body{
+    font-family:Arial, sans-serif;
+}
+
+/* HEADER */
+header{
+    background:#1a2333;
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1000;
+    box-shadow:0 2px 10px rgba(0,0,0,0.3);
+}
+
+/* NAVBAR */
+nav{
+    max-width:1200px;
+    margin:0 auto;
+    padding:0 20px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    height:120px; /* Taller navbar */
+}
+
+/* LOGO */
+.logo{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.logo img{
+    width:100px;   /* Bigger logo */
+    height:100px;
+    object-fit:contain;
+    display:block;
+}
+
+/* NAV LINKS */
+.nav-links{
+    display:flex;
+    align-items:center;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    margin-left:30px;
+    font-weight:500;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#c5a05b;
+}
+
+</style>
 </head>
+
 <body>
 
-    <header>
-        <nav>
-            <div class="logo">
-               
-                <span class="crown-o">
-                    <img src="logo.png" alt="Crown">
-                </span>
-              
-            </div>
-            
-            <div class="nav-links">
-                <a href="#services">Services</a>
-                <a href="#fleet">Fleet</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-            </div>
-        </nav>
-    </header>
+<header>
+    <nav>
 
-    <!-- Rest of your site content here -->
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="logo.png" alt="Black Crown Logo">
+        </div>
+
+        <!-- NAVIGATION -->
+        <div class="nav-links">
+            <a href="#services">Services</a>
+            <a href="#fleet">Fleet</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+    </nav>
+</header>
 
 </body>
 </html>
